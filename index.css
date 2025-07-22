@@ -1,6 +1,5 @@
 body {
   background-color: black;
-  color: white;
   font-family: "Courier New", Courier, monospace;
 }
 .container {
@@ -113,3 +112,47 @@ li:hover {
 }
 
 /* Media Queries for responsiveness */
+@media (min-width: 425px) {
+  .container {
+    background-color: grey;
+    font-size: smaller;
+  }
+  .header {
+    gap: 4px;
+  }
+  .profile-pic {
+    height: 100px;
+    width: 100px;
+  }
+  .heading {
+    font-size: smaller;
+  }
+  .fancy-text {
+    text-shadow: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    background-color: black;
+    font-size: medium;
+    color: white;
+  }
+  .profile-pic {
+    height: 150px;
+    width: 160px;
+  }
+  .heading {
+    font-size: medium;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    background-color: rosybrown;
+    font-size: larger;
+  }
+  .heading {
+    font-size: larger;
+  }
+}
