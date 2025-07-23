@@ -56,7 +56,9 @@ p {
   display: flex;
   flex-direction: column;
 }
-
+.text-center {
+  text-align: center;
+}
 .left {
   float: left;
 }
@@ -68,10 +70,14 @@ p {
   padding: 5px;
   border-radius: 5px;
   text-align: center;
+  margin-top: 10px;
 }
 .heading:hover {
   background-color: brown;
   cursor: pointer;
+}
+.toggle {
+  color: white;
 }
 .pair {
   margin: 1px 3px;
@@ -88,11 +94,11 @@ p {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-li {
+.skill-list {
   font-weight: bold;
   color: rebeccapurple;
 }
-li:hover {
+.skill-list:hover {
   color: white;
   cursor: pointer;
   background: #007bff;
@@ -100,6 +106,12 @@ li:hover {
   height: 20px;
   width: 0;
   animation: grow 1s forwards;
+}
+li {
+  font-weight: bold;
+}
+li:hover {
+  cursor: pointer;
 }
 /* motion */
 @keyframes grow {
@@ -118,9 +130,13 @@ li:hover {
     font-size: smaller;
   }
   .header {
-    gap: 4px;
+    justify-content: flex-start;
+  }
+  .head {
+    float: left;
   }
   .profile-pic {
+    float: right;
     height: 100px;
     width: 100px;
   }
@@ -138,6 +154,9 @@ li:hover {
     font-size: medium;
     color: white;
   }
+  .header {
+    justify-content: center;
+  }
   .profile-pic {
     height: 150px;
     width: 160px;
@@ -151,6 +170,9 @@ li:hover {
   .container {
     background-color: rosybrown;
     font-size: larger;
+  }
+  .header {
+    justify-self: center;
   }
   .heading {
     font-size: larger;
